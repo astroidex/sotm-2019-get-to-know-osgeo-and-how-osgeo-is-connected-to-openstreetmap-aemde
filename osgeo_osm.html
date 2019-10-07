@@ -1,0 +1,546 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Get to know OSGeo and how OSGeo is connected to OpenStreetMap</title>
+
+        <meta name="description" content="Presentation at SotM 2019 Heidelberg: Get to know OSGeo and how OSGeo is connected to OpenStreetMap - Open Source Software and Open Education making use of OpenStreetMap data">
+        <meta name="author" content="Astrid Emde, OSGeo & some slides from other OSGeo members">    
+        
+        
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/osgeo.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
+	</head>
+
+    </head>
+    <body>
+        <div class="reveal">
+          
+          <!-- header & footer -->  
+          <div class="staticElements">
+          <!--  
+            <div class="headL">
+              <img src="img/sotm2019-logo.svg"></img>
+            </div> 
+            <div class="headR">
+              <img src="img/osgeo/osgeo_o_logo.png"></img>
+            </div>
+          -->
+            
+          <!-- Footer center -->
+          <!--
+          <div class="footC">
+            <footnote>Astrid Emde (OSGeo) - State of the Map 2019 Heidelberg</footnote>
+            </div>
+          </div>          
+          -->
+          <div class="slides">
+
+<section>
+    <h1>Get to know OSGeo and how OSGeo is connected to OpenStreetMap</h1>
+    <h3>Open Source Software and Open Education making use of OpenStreetMap data</h3>
+    <p><small>Astrid Emde (<a href="https://osgeo.org/" title="OSGeo">OSGeo Board</a> from Cologne Germany)</small></p>
+    <p><small><a href="https://2019.stateofthemap.org/" title="State of the Map 2019 Heidelberg">SotM 2019 Heidelberg</a></small></p>
+<img src="img/osgeo/osgeo_o_logo.png" height="210">
+<img src="img/qgis/osm_logo.png" height="220">          
+</section>
+
+
+<section>
+<p><img src="img/osgeo_logo.png" height="180">
+<p>
+    <h2>Open Source Geospatial Foundation</h2>
+<p>
+    <h2>Free, Open, Self-organizing, Global</h2>
+</ul>
+</section>
+
+
+<section>
+    <h2>What is OSGeo</h2>
+<ul>
+  <li>OSGeo is a not-for-profit software foundation
+<p><small>providing organizational, legal, and financial support for projects</small>
+  <li class="fragment">OSGeo is volunteer driven 
+<p><small>Passionate membership of individuals from around the world.</small>
+  <li class="fragment">OSGeo promotes adoption of open geospatial technology
+<p><small> Partnerships on open approach to software, standards, data and education.</small>
+</ul>
+</section>
+
+
+<section>
+    <h2>OSGeo history</h2>
+<p>
+<ul>
+   <li>Established in 2006 at a meeting in Chicago, IL with financial support from AutoDesk
+<p>
+   <!--<li class="fragment grow"><strong>Note: OSM was there already since 2004</strong>-->
+   <li class="fragment"><strong>Note: OSM was there already since 2004</strong>   
+<p>  
+   <li class="fragment">Driven by need to organize and navigate rapidly growing field of open source geospatial projects
+<p>
+   <li class="fragment">Founding members: leading open source geospatial projects - GDAL, MapServer, QGIS, GRASS GIS, PostGIS 
+</ul>
+<p><img src="img/OSGeo_logo_750_317.png" height="160">
+</section>
+
+
+<section>
+<h1>Supporting Open Source </h1>
+<h1>Software development</h1>
+</section>
+
+
+<section>
+    <h2>OSGeo projects</h2>
+<p>Projects are the OSGeo core focus 
+<p>25 graduated through a rigorous incubation:
+   <ul>
+   <li><strong>Web Mapping:</strong> deegree, Geomajas, GeoMoose, GeoServer, Mapbender, mapfish, MapServer, 
+MapGuide Open Source*, OpenLayers, PyWPS
+<p>
+   <li><strong>Desktop: </strong>GRASS GIS, gvSIG Desktop, Marble, QGIS Desktop
+<p>
+   <li><strong>Libraries: </strong>GDAL/OGR, GEOS, GeoTools, Orfeo ToolBox
+<p>
+   <li><strong>Spatial Database, metadata catalogs, other: </strong>GeoNetwork, GeoNode, OSGeoLive, PostGIS, pycsw
+   </ul>
+<p><img src="img/osgeo-logo-project.png" height="100">
+</section>
+
+
+<section>
+    <h2>OSGeo projects</h2>
+<p> 20 Community projects, 6 are in incubation (*)
+   <ul>
+   <li><strong>Libraries: </strong>actinia, Pronto Raster, Proj*, FDO, Pronto Raster, OSSIM, pgRouting
+<p>
+   <li><strong>Web Mapping: </strong>istSOS*, ZOO-project*, Oskari*, GeoWebCache, GC2/Vidi
+<p>
+   <li><strong>Desktop: </strong>OSGeo4W, Opticks*
+<p>
+   <li><strong>Other: </strong>GeoServer Client PHP, MetaCRS*, Loader, GeoHealthCheck, Portable GIS, TEAM Engine*
+</ul>
+<p><img src="img/osgeo-logo-project.png" height="100">
+</section>
+
+
+<section>
+<p><img src="img/osgeo-gsoc-A4.png" height="550">
+</section>
+
+<section>
+      <h2>OSGeo Projects love OSM Data</h2>
+<img src="img/osgeo/osgeo_o_logo.png" height="280">
+<img src="img/qgis/osm_logo.png" height="290">
+<p><small>GDAL OSM Support</small>
+<p><small>OpenLayers / Leaflet OSM Support</small>
+<p><small>OSM based Services as Basemap f.e Mapbender</small>
+<p><small>pgRouting on OSM data</small></small>
+</section>
+
+
+<section>
+      <h2>OSM User love OSGeo Projects</h2>
+<img src="img/osgeo/osgeo_o_logo.png" height="280">
+<img src="img/qgis/osm_logo.png" height="290">
+<p><small>QGIS visualisation & import & lot of possibilities & plugins</small>
+<p><small>a variety of Software for different needs</small>
+</section>
+
+
+<section>
+    <h2>OSGeo Annual General Meeting</h2>
+<p><small>AGM every year at FOSS4G</small>
+<p><img src="img/osgeo/osgeo_agm_2019.png" height="300">
+<p>
+<small><a href="https://media.ccc.de/v/bucharest-480-osgeo-annual-general-meeting" target="_blank">Link to AGM 2019 video</a></small>
+</section>
+
+
+<section>
+    <h2>OSGeo Board</h2>
+<p><small>9 elected board members</small>
+<p><img src="img/osgeo/osgeo_board_2019.png" height="450">
+</section>
+
+
+<section>
+    <h2>OSGeo membership</h2>
+  <small>Open, free membership</small>
+<ul>
+ <li>5600+ members registered on the wiki 
+ <li>940 registrations on the website 08/2019
+ <li>33700+ OSGeo mailman server unique subscribers 08/2019
+ <li>425 elected <a href="https://www.osgeo.org/about/charter-members/" target="_blank">charter members</a> - developers, activists, advocates (2018)
+ <li>charter members elect the board of directors
+ <!--<li class="fragment grow"><strong>Note: 5.3 million OSM registrations (2019-06-07 <a href="https://wiki.openstreetmap.org/wiki/Stats" traget="_blank">OSM Stats)</a></strong>-->
+ <li><strong>Note: 5.3 million OSM registrations (2019-06-07 <a href="https://wiki.openstreetmap.org/wiki/Stats" traget="_blank">OSM Stats)</a></strong>
+</ul>
+<a href="http://bl.ocks.org/jsanz/raw/779f9b9954b92461fa50/"><img src="img/charter_members_map.png" height="260"></a>
+</section>
+
+
+<section>
+<h2>Local chapters</h2>
+<ul>
+<li>30 + local chapters all over the world
+<li>organize meetups, conferences, code sprints
+<li>report at Annual General Meeting at Global FOSS4G
+<li>manage translations of documentation 
+</ul>
+<p><img src="img/NL_localchapter.jpg" height="200">
+<img src="img/CZ_local.jpg" height="200">
+</section>
+
+
+<section>
+<h2>Local chapters</h2>
+<p>are they connected to OSM?
+<p><img src="img/qgis/osm_logo.png" height="200">
+</section>
+
+
+<section>
+<h2>Local chapter FOSSGIS e.V.</h2>
+<p>German language local Chapter for OSGeo
+<p>Official Local Chapter of OSMF for Germany
+<ul>
+<li class="fragment"> 200+ members
+<li class="fragment"> FOSSGIS & OSM good combination
+<li class="fragment"> maybe different interests
+</ul>
+<p><img src="img/osgeo/fossgis_logo.png" height="100">
+</section>
+
+
+<section>
+  <h2>other OSGeo Local chapters</h2>
+  <p>OSGeo & OSM good combination
+  <ul>
+    <li> Argentinia
+    <li> Oceania
+    <li> Italy
+    <li> ...
+  </ul>
+</section>
+
+
+<section>
+  <h2>Conferences: Global</h2>
+  <p>Annual global FOSS4G conference travels around the world
+  <p><img src="img/foss4g2020Calgary.png" height="130">&nbsp;<img src="img/foss4g2019Bucharestsite.png" height="60">
+  <img src="img/osgeo/foss4g_history.png" height="360">
+</section>
+
+
+<section>
+  <h2>FOSS4G 2019 Bucharest</h2>
+  <p><small>amazing event with over 1000 participants</small>
+  <p><img src="img/osgeo/foss4g_2019_groupfoto.png" height="500">
+</section>
+
+
+<section>
+  <h2>FOSS4G covers OSGeo and OSM</h2>
+  <p>focus on FOSS4G - Free open Source Software for Geospatial </p>      
+  <img src="img/osgeo/osgeo_o_logo.png" height="250">
+  <img src="img/qgis/osm_logo.png" height="260">
+  <p><small>meet the developer</small>
+  <p><small>talks about new feature in software xy</small>
+  <p><small>talks about use cases</small>
+  <p><small>... often solutions with OSM</small>
+  <p><small>... regional events are often combinations of OSGeo and OSM</small>
+</section>
+
+<section>
+    <h2>FOSS4G</h2>
+    <p>dancing - singing - musical - pub race </p>      
+    <img src="img/osgeo/foss4g_2019_dancing.png" height="360">
+    <!--<video src="./videos/foss4g_2019_dancing.mp4" controls>
+    Enjoy the QGIS video!  
+    </video>-->
+</section>
+
+
+<section>
+  <h2>Conferences: regional</h2>
+  <p>Organized by local chapters, rapidly growing
+  <p><small>
+  <b>many regional FOSS4G conferences per year</b>
+  <ul>
+    <li><a href="https://www.osgeo.org/events/" target="_blank">See -> OSGeo Events</a>&nbsp;<a href="https://www.osgeo.org/initiatives/foss4g-travel-grant-program/" target="_blank">and -> Travel Grant Program</a>
+    <li>FOSS4G SotM Oceania 2019 November Wellington, New Zealand
+    <li>FOSS4GUK  
+    <li>FOSS4G Japan
+    <li>FOSS4G North America 2019
+    <li>Bolsena Codesprint 2019 ~ June 24th, 2019
+    <li>FOSS4G NL 2019 at Delft University ~ June 20th, 2019
+    <li>Jornadas SIG Libre 2019 ~ May 29th, 2019
+    <li>OSGeo Community Sprint 2019 ~ May 14th, 2019
+    <li>FOSS4G Europe  2018, Guimarães, Portugal
+    <li>FOSS4G Asia 2018, Sri Lanka
+    <li>FOSS4G BE, Brussels
+    <li>FOSS4G Hungary
+    <li>GFOSS Italy
+    <li>FOSGIS Germany
+    <li>OSGeo Irish Local chapter symposium, OSS4G Finland, OSGeo Africa, QGIS conference, ...
+  </ul>
+  </small>
+</section>
+
+
+<section>
+  <h2>Community sprints</h2>
+  <ul>
+    <li>OSGeo budget supports code and community sprints
+    <li>Collaborative sprints with multiple projects 
+    <li>Community sprints associated with FOSS4G conferences
+    <li>Code sprints organzied by projects
+  </ul>
+  <p><img src="img/fossgis2017.jpg" height="230">
+  <p><small>Community sprint at Linuxhotel by FOSSGIS e.V.</small>
+</section>
+
+
+<section>
+  <p><img src="img/osgeo/foss4g_2018_community_sprint.png" height="450">
+  <p><small>Community sprint at FOSS4G 2018 Dar es Salaam (Tanzania)</small>
+</section>
+
+
+<section>
+  <p><img src="img/osgeo/foss4g_2018_community_sprint2.png" height="500">
+  <p><small>Community sprint at FOSS4G 2018 Dar es Salaam (Tanzania)</small>
+</section>
+
+
+<section>
+  <h2>Google Summer of Code</h2>
+  <a href="https://summerofcode.withgoogle.com">https://summerofcode.withgoogle.com</a>
+  <p>
+  <ul>
+    <li>OSGeo serves as umbrella organization for projects
+    <li>Smaller open source geospatial projects can also join
+    <li>12 years, 150+ students ($750,000 +) , 7 students in 2019
+    <li>mentors work for free, get to visit Google headquarters
+  </ul>
+  <p><img src="img/Google_bikeGSoC2014.jpg" height="200">
+  <img src="img/GSoc2014_atGoogle.jpg" height="200">
+  <br><img src="img/GSoC.png" height="50">
+</section>
+
+
+<section>
+  <h2>Google_Code-in</h2>
+  <p><a href="https://codein.withgoogle.com/archive/">https://codein.withgoogle.com/archive/</a>
+  <ul>
+    <li>OSGeo serves as umbrella organization for project participation in Google code-in
+    <li>Fostering pre-university student participation in OSGeo 
+    <li>2 years, 649 small tasks for 11 OSGeo projects
+  </ul>
+  <img src="img/Google_code-in.png" height="100">
+  <p>
+  <h2>Google Season of Docs-in</h2>
+</section>
+
+
+<section>
+  <h2>Sessions at major conferences</h2>
+  <p> 
+  <ul>
+    <li>Participation at major scientific and technology conferences 
+    <li>Open geospatial sessions, workshops, townhalls 
+    <li>ISPRS, ICC, AGU, EGU, ...
+    <li>MoUs with several organizations 
+  </ul>
+  <p>
+  <img src="img/EGUtownhall.png" height="150">
+  <img src="img/foss4geurope2017-branding.png" height="150">
+  <img src="img/geo4africa2017.jpg" height="150">
+</section>
+
+
+<section>
+  <h2>Beyond software</h2>
+  OSGeo works with partners to support and promote 
+  <p>
+  <ul>
+    <li><b>Open Source:</b> collaborative software development.
+    <li class="fragment"><b>Open Data:</b> free access to geospatial data  
+    <li class="fragment"><b>Open Standards:</b> avoid lock-in, use interoperable software
+    <li class="fragment"><b>Open Education:</b> learning and teaching without barriers
+    <li class="fragment"><b>Open Science:</b> Share data, software, publications 
+    <li class="fragment"><b>MoUs</b> <a href="https://wiki.osgeo.org/wiki/MOU_OSGeo_All">with 14+ organizations</a> 
+  </ul>
+</section>
+
+
+
+<section>
+  <h2>How it started</h2>
+  Founded in 2011: MoU between OSGeo and the International Cartographic Association (ICA)
+  <br> <img src="img/mou_ica_osgeo_photo.jpg" height="280"> 
+  &nbsp;&nbsp;
+  <img src="img/mou_ica_osgeo_photo_2015_renew.jpg" height="280"> 
+  <br> <img src="img/osgeo_logo.png" height="60"> &nbsp;&nbsp; <img src="img/ica_logo.png" height="60">
+  <br><small>Georg Gartner and Arnulf Christl, renewal in 2015 with Jeff McKenna</small></p>
+</section>
+
+
+<section>
+  <h2>More MoUs</h2>
+  <p>International Society for Photogrammetry and Remote Sensing (ISPRS) signed in 2014.
+  <p>University Consortium for GIScience (UCGIS) signed in 2016</p>
+  <p>Association of Geographic Information Laboratories in Europe (AGILE) signed in 2017</p>
+  <p><img src="img/osgeo/ogc_logo.png" height="70"> Open Geospatial Consortium
+  </br>
+  &nbsp;&nbsp; <img src="img/ica_logo.png" height="50">
+  <img src="img/isprs_logo.jpg" height="50">
+  <img src="img/ucgis-logo.png" height="50">
+  &nbsp;&nbsp; <img src="img/AGILE_header.jpg" height="50">
+  <p>
+  <img src="img/osgeo/youthmapper_logo.png" height="70"> <a href="https://wiki.osgeo.org/wiki/MOU_YouthMappers" target="_blank">YouthMappers</a> (signed in 2018)
+  <p>
+  US DoI, OGC, LH Corp, IGU, STP India, TIB, GLTN, UNIGIS
+</section>
+
+
+<section>
+  <h2>So why not an OSGeo OSM MoU?</h2>
+  <p>people from OSGeo and OSMF talked
+  <p>   
+     <img src="img/qgis/osm_logo.png" height="150">
+  <ul>   
+    <li class="fragment">OSM met with OSGeo at the LinuxTag 2006 and the following years
+    <li class="fragment">No MoU singed as OSM does not do that
+    <li class="fragment">we are friends already
+    <li class="fragment">no need for a MoU
+    <li class="fragment">new Category: Like Minded Organizations     
+  </ul> 
+</section>
+
+
+<section>
+  <h1>GeoForAll</h1>
+  <h1> OSGeo educational initiative</h1>
+  <p style="margin-top: 0.5em">
+  <h3> Global network of academic research and education laboratories and government/industry partners</h3>
+  <p style="margin-top: 0.5em">
+  <img src="img/geoforall_green_withtext.png" height="180">
+</section>
+
+
+<section>
+  <h2>Mission and goals</h2>
+  <p style="margin-top: 0.8em">
+  <h3>Making geospatial education and opportunities accessible to all</h3>
+  <p>
+  <ul>
+    <li>Create research and teaching opportunities in open geospatial science 
+    <p>
+    <li>Build global open access teaching and research infrastructure 
+    <p>
+    <li>Establish collaborations between academia, government and industry around 
+    open geospatial science and education
+  </ul>
+</section>
+
+
+<section>
+  <h2>Map of the labs 2017</h2>
+  <p>over 100 labs globaly in 2017
+  <p> <img src="img/geoforall_map_2016.png" height="400">
+</section>
+
+
+<section>
+  <img src="img/qgis/osgeolive_logo.png" height="80">
+  <p>OSGeoLive 13.0 is out! Lubuntu 18.4
+  <p>contains 50+ Open Source Software for Geospatial
+  <p>Data & Dokumentation (Quickstart & Overview)
+  <p>
+  <img src="img/qgis/osgeolive_menu.png" height="340">
+  <p>
+  <!--<a href="https://live.osgeo.org">https://live.osgeo.org</a>
+  <img src="img/qgis/osgeo-logo-project.png" height="30">-->
+</section>
+
+
+<section>
+  <img src="img/qgis/osgeolive_logo.png" height="80">
+  <p>OSM Data from the region of the actual FOSS4G
+  <p>iD Editor, JOSM, Mapnik 
+  <p>
+  <img src="img/qgis/osgeolive_menu.png" height="200">
+  <img src="img/qgis/osm_logo.png" height="200">
+  <p>
+  <a href="https://live.osgeo.org">https://live.osgeo.org</a>
+</section>
+
+
+<section>
+  <h2>Great Combination</h2>
+  <img src="img/osgeo/osgeo_o_logo.png" height="280">
+  <img src="img/qgis/osm_logo.png" height="290">
+</section>
+
+
+<section>
+  <p>
+      <img src="img/osgeo/foss4g_big.jpg" height="400">
+  <p>
+  Enjoy a wonderful SotM 2019 in Heidelberg! 
+  <p><small>Astrid Emde (OSGeo)</small>
+  <p></p>
+  <a href="https://vimeo.com/29199611" target="_blank">FOSS4G 2011 Denver</a> Everyone's a mapper in their own way" performed by Captain Geo, aka Schuyler Erle
+</section>
+
+        </div> 
+    </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            
+            /* autoloop
+                loop: true,
+                autoSlide: 5000,
+                slideNumber: true,                
+                */            
+            Reveal.initialize({
+                history: true,
+                transition: "none",
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
